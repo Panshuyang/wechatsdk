@@ -18,7 +18,7 @@ import com.alibaba.fastjson.JSONObject;
  */
 public class MainTest {
 	public static void main(String[] args) {
-		String accessToken = WxBase.getAccessToken("wxef9adf297544b9fa","73923e8dedbe0e76a48fb5718e995525").get("access_token").toString();
+		String accessToken = WxBase.getAccessToken("APPID","APPSECRET").get("access_token").toString();
 		System.out.println(accessToken);
 		fansTest(accessToken);
 	}
